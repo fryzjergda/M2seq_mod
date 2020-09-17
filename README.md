@@ -35,6 +35,9 @@ sudo pip install nwalign
 sudo pip install matplotlib
 sudo pip install httplib2
 sudo pip install numpy
+sudo pip install scipy
+sudo pip install xlrd
+sudo pip install xlwt
 ```
 
 Any additional Python libraries can be installed the same way.
@@ -114,6 +117,22 @@ chmod a+x pvclient.py
 ```
 
 
+#### RDATKit
 
+This is required to handle RDAT files, mainly for generation of graphs (MATLAB also required...).
 
+Clone the software from the github repository, to where you keep programs:
 
+https://github.com/ribokit/RDATKit
+
+```
+git clone git@github.com:ribokit/RDATKit.git
+```
+
+*MATLAB:*
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path/to/RDATKit/MATLAB/.
+
+*Python:*
+
+Copy `path.py.example` into `rdatkit/path.py`. Edit `rdatkit/path.py` following the instructions in the file to point to local installations of `RNAstructure`, `ViennaRNA`, and `VARNA`.
