@@ -117,6 +117,9 @@ chmod a+x pvclient.py
 ```
 
 
+#### VARNA
+
+
 #### RDATKit
 
 This is required to handle RDAT files, mainly for generation of graphs (MATLAB also required...).
@@ -129,10 +132,34 @@ https://github.com/ribokit/RDATKit
 git clone git@github.com:ribokit/RDATKit.git
 ```
 
-*MATLAB:*
+
+
+
+**MATLAB:**
 
 In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path/to/RDATKit/MATLAB/.
 
-*Python:*
+**Python:**
 
 Copy `path.py.example` into `rdatkit/path.py`. Edit `rdatkit/path.py` following the instructions in the file to point to local installations of `RNAstructure`, `ViennaRNA`, and `VARNA`.
+
+Example contents of `rdatkit/path.py`:
+
+```
+PATH_RNA_STRUCTURE = '/home/fryzjer/Apps/RNAstructure/exe/'
+PATH_VIENNA_RNA = '/usr/local/bin/'
+PATH_VARNA_JAR = '/home/fryzjer/Projects/shape-backend/VARNAv3-93.jar'
+
+```
+
+Then go to RDATKit directory:
+
+```
+cd path/to/RDATKit/
+```
+
+and run:
+
+```
+python setup.py install
+```
