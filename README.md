@@ -28,6 +28,18 @@ https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04
 sudo apt install python2
 ```
 
+#### Python modules
+
+```
+sudo pip install nwalign
+sudo pip install matplotlib
+sudo pip install httplib2
+sudo pip install numpy
+```
+
+Any additional Python libraries can be installed the same way.
+
+
 #### Novobarcode
 
 For this wrapper, Novobarcode is no longer needed. Our data is alreade demultiplexed, so there is no need for installation this software.
@@ -41,24 +53,67 @@ https://rna.urmc.rochester.edu/register.html
 
 Free registration is required.
 
-Extract to directore where you keep programs, and add the following to `~/.bashrc`:
+Extract to the directory where you keep programs, and add the following to `~/.bashrc`:
 
 ```
 export PATH=$PATH:$HOME/RNAstructure/exe
 export DATAPATH=$HOME/RNAstructure/data_tables
 
-
 example:
 export PATH=$PATH:/home/fryzjer/Apps/RNAstructure/exe/
 export DATAPATH='/home/fryzjer/Apps/RNAstructure/data_tables/'
+```
 
+#### BowTie 2
+
+Download software from:
+
+https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.2.9/
+
+Extract to the directory where you keep programs, and add the following to `~/.bashrc`:
+
+```
+export PATH=$PATH:$HOME/bowtie2-2.2.9/
+
+example:
+export PATH=$PATH:/home/fryzjer/Apps/bowtie2-2.2.9/
+```
+
+#### ShapeMapper 1.2
+
+Clone the software from the github repository, to where you keep programs:
+
+https://github.com/Weeks-UNC/ShapeMapper_v1.2
+
+```
+git clone git@github.com:Weeks-UNC/ShapeMapper_v1.2.git
+
+```
+
+Add the following to `~/.bashrc`:
+
+```
+export PATH=$PATH:$HOME/ShapeMapper_v1.2/
+
+example:
+export PATH=$PATH:/home/fryzjer/Apps/ShapeMapper_v1.2/
+
+```
+
+Go to the directory with ShapeMapper and run command:
+
+```
+make
+```
+
+Make `ShapeMapper.py` and `pvclient.py` executable:
+
+```
+chmod a+x ShapeMapper.py
+chmod a+x pvclient.py
 ```
 
 
 
-
-#### ShapeMapper 1.2
-
-https://github.com/Weeks-UNC/ShapeMapper_v1.2
 
 
