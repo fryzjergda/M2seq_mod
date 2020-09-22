@@ -1,11 +1,18 @@
 # M2seq_mod
 ## A wrapper for M2seq pipeline
 
+
+
+### Usage
+
 ```
 run_m2seq_pipeline.py -s sequence_file.fa -f XXX_L001_R1_001.fastq XXX_L001_R2_001.fastq
 ```
 
-### Differences form the original M2seq
+
+### Plot generation
+
+### Differences from the original M2seq
 
 The two key deifferences between this modified version and the original version of **M2seq** are:
 
@@ -20,7 +27,7 @@ xxdiff m2seq.py m2seq_mod.py
 
 ```
 
-2. The whole pipeline is wrapped under one, simplified script `run_m2seq_pipeline.py`, where you need to specify only files from the sequencing and a fasta file. No more need for cumbersome generation of the configure file for ShapeMapper. The wrapper does everything, and creates all the needed inputs and directories.
+2. The whole pipeline is wrapped under one, simplified script `run_m2seq_pipeline.py`, where you need to specify only files from sequencing and a fasta file. No more need for cumbersome generation of the configure file for ShapeMapper. The wrapper does everything, and creates all the needed inputs and directories.
 
 ## Installation
 
@@ -306,3 +313,11 @@ In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `pat
 In order to save all the previously set paths to MATLAB scripts, in MATLAB go to "Set Path", click "save" button and save file `pathdef.m`.
 
 Whenever you want to open MATLAB with all paths set up, go to the directpry where you have saved the `pathdef.m` file, and open MATLAB from the command line.
+
+
+## Citation
+
+This is a fork of the M2seq repository by Rhiju Das group.
+If you use this software, please cite the original authors:
+
+Cheng, C. Kladwang, W. Yesselman, J. Das, R. (2017) "RNA structure inference through chemical mapping after accidental or intentional mutations" _BioRxiv_ https://doi.org/10.1101/169953.
