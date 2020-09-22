@@ -1,16 +1,48 @@
 # M2seq_mod
-## A wrapper for M2seq pipeline
+## A wrapper for a modified M2seq pipeline
 
+This is a fork from M2seq reposirtory:
+
+https://github.com/ribokit/M2seq
+
+
+A modified version of the M2seq pipline, crafted to our needs. The pipeline does not include demultiplexing step, and the procedure of running is simplified.
+
+If you want to see the original documentation please see the original M2seq repository (or `README_old.md`).
 
 
 ### Usage
+
+To use this program you need two files from sequencing, following this naming conention:
+
+```
+XXX_L001_R1_001.fastq
+XXX_L001_R2_001.fastq
+```
+
+where `XXX`
+may be whatever string you like, whatever length e.g., sample name/number.
+
+Also required is fasta file with the sequence of the studied RNA, without barcodes, only the region of interest.
+
+When you have those files, you can simply run the program by:
 
 ```
 run_m2seq_pipeline.py -s sequence_file.fa -f XXX_L001_R1_001.fastq XXX_L001_R2_001.fastq
 ```
 
+The output will be directed to a newly created folder named as previously specified `XXX` prefix of the sequencing files names.
+
+It will first run ShapeMapper, and then M2seq, resulting in a series of `.rdat` files, which you can use for visualisation of the results.
+
+The ouptu files can be found in `XXX/3_M2seq/simple_files`.
+
+
 
 ### Plot generation
+
+
+
 
 ### Differences from the original M2seq
 
