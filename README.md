@@ -67,6 +67,51 @@ export PATH=$PATH:/home/fryzjer/Apps/RNAstructure/exe/
 export DATAPATH='/home/fryzjer/Apps/RNAstructure/data_tables/'
 ```
 
+
+#### ViennaRNA
+
+
+Install ViennaRNA via `apt install`:
+
+`sudo apt install viennarna`
+
+
+If that does not work then try the below method:
+
+Download `ViennaRNA Package - Core`, `ViennaRNA Package - Python 2 bindings` and `ViennaRNA Package - Python 3 bindings`, for yuor appropriate system under the "**Install precompiled Binary Package**" part from here:
+
+https://www.tbi.univie.ac.at/RNA/
+
+and follow the instructions:
+
+```
+  1. 'cd' to the directory containing the package's source code and type
+     './configure' to configure the package for your system.
+
+     Running 'configure' might take a while.  While running, it prints
+     some messages telling which features it is checking for.
+
+  2. Type 'make' to compile the package.
+
+  3. Optionally, type 'make check' to run any self-tests that come with
+     the package, generally using the just-built uninstalled binaries.
+
+  4. Type 'make install' to install the programs and any data files and
+     documentation.  When installing into a prefix owned by root, it is
+     recommended that the package be configured and built as a regular
+     user, and only the 'make install' phase executed with root
+     privileges.
+
+  5. Optionally, type 'make installcheck' to repeat any self-tests, but
+     this time using the binaries in their final installed location.
+     This target does not install anything.  Running this target as a
+     regular user, particularly if the prior 'make install' required
+     root privileges, verifies that the installation completed
+     correctly.
+
+```
+
+
 #### BowTie 2
 
 Download software from:
@@ -166,7 +211,7 @@ python setup.py install
 
 
 
-## requirements for MATLAB
+## Requirements for MATLAB
 
 #### RDATKit
 
