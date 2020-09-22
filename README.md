@@ -120,6 +120,13 @@ chmod a+x pvclient.py
 #### VARNA
 
 
+Download the `VARNAv3-93.jar` from here:
+
+http://varna.lri.fr/index.php?lang=en&page=downloads&css=varna
+
+and put it where you keep your programs.
+
+
 #### RDATKit
 
 This is required to handle RDAT files, mainly for generation of graphs (MATLAB also required...).
@@ -132,14 +139,6 @@ https://github.com/ribokit/RDATKit
 git clone git@github.com:ribokit/RDATKit.git
 ```
 
-
-
-
-**MATLAB:**
-
-In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path/to/RDATKit/MATLAB/.
-
-**Python:**
 
 Copy `path.py.example` into `rdatkit/path.py`. Edit `rdatkit/path.py` following the instructions in the file to point to local installations of `RNAstructure`, `ViennaRNA`, and `VARNA`.
 
@@ -163,3 +162,33 @@ and run:
 ```
 python setup.py install
 ```
+
+
+
+
+## requirements for MATLAB
+
+#### RDATKit
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/RDATKit/MATLAB/.`
+
+
+#### Biers
+
+Clone the program from repo:
+
+`git clone https://github.com/ribokit/Biers.git`
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/Biers/Scripts/.`
+
+Add the following to `~/.bashrc`:
+
+```
+export VARNA=$PATH:$HOME/src/VARNAv3-93.jar
+
+example:
+export VARNA=$PATH:/home/fryzjer/Projects/shape-backend/VARNAv3-93.jar
+```
+
+
+#### HiTrace
