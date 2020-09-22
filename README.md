@@ -35,11 +35,21 @@ The output will be directed to a newly created folder named as previously specif
 
 It will first run ShapeMapper, and then M2seq, resulting in a series of `.rdat` files, which you can use for visualisation of the results.
 
-The ouptu files can be found in `XXX/3_M2seq/simple_files`.
+The output files can be found in `XXX/3_M2seq/simple_files`.
 
 
 
 ### Plot generation
+
+The key modes of visualizing the M2seq data are as a 2D plot (mutate-and-map style) and as mutation spectra (rates of mutation/deletion both across the sequence and on average).
+
+To view the 2D plot, open MATLAB and run:
+
+`m2seqplot('3_M2seq/simple_files/XXX_L001_R1_001_fasta.reactivity.rdat`
+
+To view the mutation spectra, open MATLAB and run:
+
+`mut_heatmap('2_ShapeMapper/output/counted_mutations/RTB005_P4P6.csv',103:260,'',13);`
 
 
 
