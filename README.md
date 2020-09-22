@@ -236,4 +236,29 @@ export VARNA=$PATH:/home/fryzjer/Projects/shape-backend/VARNAv3-93.jar
 ```
 
 
-#### HiTrace
+#### HiTRACE
+
+RDATkit requires some MATLAB functions from HiTRACE (even though it is not mentioned NOWHERE in the RDATkit documentation).
+
+Clone the program from the repo:
+
+`git clone git@github.com:ribokit/HiTRACE.git`
+
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/HiTRACE/Scripts/`
+
+
+#### Strings
+
+For older version of MATLAB you may need to get additional scripts for parsing strings.
+
+Get them from here:
+
+https://uk.mathworks.com/matlabcentral/fileexchange/21710-string-toolkits
+
+unpack the archive where you keep scripts.
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/strings/.`
+
+
+#### Saving MATLAB setup
