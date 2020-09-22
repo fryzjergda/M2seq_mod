@@ -5,6 +5,46 @@
 run_m2seq_pipeline.py -s sequence_file.fa -f XXX_L001_R1_001.fastq XXX_L001_R2_001.fastq
 ```
 
+### Differences form the original M2seq
+
+The two key deifferences between this modified version and the original version of **M2seq** are:
+
+1. The `m2seq.py` script was modified to not run the demultiplexing step, since our data is already demultiplexed. If you want to see changes between the original `m2seq.py` and the modified `m2seq_mod.py` you can use diff tool:
+
+```
+diff m2seq.py m2seq_mod.py
+
+or gui diff:
+
+xxdiff m2seq.py m2seq_mod.py
+
+```
+
+2. The whole pipeline is wrapped under one, simplified script `run_m2seq_pipeline.py`, where you need to specify only files from the sequencing and a fasta file. No more need for cumbersome generation of the configure file for ShapeMapper. The wrapper does everything, and creates all the needed inputs and directories.
+
+## Installation
+
+Clone the software from the repo:
+
+`git clone git@github.com:fryzjergda/M2seq_mod.git
+
+Go to the folder `M2seq_mod/` and make the following executable:
+
+```
+chmod a+x m2seq_mod.py
+chmod a+x run_m2seq_pipeline.py
+chmod a+x simple_to_rdat.py
+```
+
+Add the following to `~/.bashrc`:
+
+```
+export PATH=$PATH:$HOME/M2seq_mod/
+
+example:
+export PATH=$PATH:/home/fryzjer/Projects/M2seq_mod/
+```
+
 
 
 
@@ -262,3 +302,7 @@ In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `pat
 
 
 #### Saving MATLAB setup
+
+In order to save all the previously set paths to MATLAB scripts, in MATLAB go to "Set Path", click "save" button and save file `pathdef.m`.
+
+Whenever you want to open MATLAB with all paths set up, go to the directpry where you have saved the `pathdef.m` file, and open MATLAB from the command line.
