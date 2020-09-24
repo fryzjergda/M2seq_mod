@@ -26,7 +26,7 @@ def argument_parser():
 
 def run_m2seq():
 
-    name = fastq_in[0].rstrip("_L001_R1_001.fastq")
+    name = fastq_in[0].replace("_L001_R1_001.fastq","")
     cfg_name = seq_in.replace("fa","cfg")
     os.system("mkdir " + name)
 

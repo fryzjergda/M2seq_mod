@@ -1,0 +1,44 @@
+Pipeline started in /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/2_ShapeMapper at 12:48:15, 9/24
+
+Starting config file parsing at at 12:48:15, 9/24
+Config file successfully parsed at at 12:48:15, 9/24
+
+Starting reference index building at at 12:48:15, 9/24
+P4P6noHP bowtie index built successfully at 12:48:17, 9/24.
+
+Starting read quality filtering at at 12:48:17, 9/24
+RTB000_S1_L001_R1_001.fastq quality filtered successfully.
+RTB000_S1_L001_R2_001.fastq quality filtered successfully.
+
+Starting sequence alignment at at 12:48:20, 9/24
+Sample RTB000_S1 aligned successfully.
+Sample RTB000_S1 alignment stats:
+    329 reads; of these:
+    329 (100.00%) were paired; of these:
+    12 (3.65%) aligned concordantly 0 times
+    306 (93.01%) aligned concordantly exactly 1 time
+    11 (3.34%) aligned concordantly >1 times
+    ----
+    12 pairs aligned concordantly 0 times; of these:
+    0 (0.00%) aligned discordantly 1 time
+    ----
+    12 pairs aligned 0 times concordantly or discordantly; of these:
+    24 mates make up the pairs; of these:
+    14 (58.33%) aligned 0 times
+    10 (41.67%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+    97.87% overall alignment rate
+
+Starting alignment parsing at at 12:48:22, 9/24
+Sample RTB000_S1 alignment parsed successfully.
+
+Starting mutation counting at at 12:48:24, 9/24
+File RTB000_S1_P4P6noHP.txt mutations counted successfully.
+
+Starting making old-style mutation strings at at 12:48:26, 9/24
+File RTB000_S1_P4P6noHP.txt made old mutation strings successfully.
+
+Copying counted mutation csv's rows to columns at at 12:48:28, 9/24
+
+Starting reactivity profile creation at at 12:48:28, 9/24
+Pipeline completed at 12:48:28, 9/24.

@@ -1,0 +1,22 @@
+Current directory: /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/3_M2seq/simple_files
+
+Simple data file provided:	RTB000_S1_P4P6noHP.txt.simple
+Generating 2D data from simple data file.
+
+Starting analysis from simple file at 2020/09/24 12:48:29
+
+
+Total number of sequences: 308
+Number of sequences used for RT stop reactivities: 308
+Full-length filter: alignment must extend to at least position 10
+Quality filter (use for 2D data if N or fewer mismatches to WT): N = 10
+Number of sequences passing full-length and quality filters: 308
+Number of sequences used for 2D data (at least 1 mutation): 58
+
+RDAT file created: /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/3_M2seq/simple_files/RTB000_S1_P4P6noHP_P4P6noHP.stop_reactivity.rdat
+RDAT file created: /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/3_M2seq/simple_files/RTB000_S1_P4P6noHP_P4P6noHP.mut_reactivity.rdat
+RDAT file created: /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/3_M2seq/simple_files/RTB000_S1_P4P6noHP.reactivity.rdat
+RDAT file created: /home/fryzjer/Projects/tests/m2seq/example_data/input/RTB000_S1/3_M2seq/simple_files/RTB000_S1_P4P6noHP_P4P6noHP.raw.rdat
+
+Finished analysis from simple file at 2020/09/24 12:48:29
+
