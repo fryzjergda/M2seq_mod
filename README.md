@@ -38,6 +38,22 @@ It will first run ShapeMapper, and then M2seq, resulting in a series of `.rdat` 
 The output files can be found in `XXX/3_M2seq/simple_files`.
 
 
+#### Runnig test run on test data
+
+Copy contents of `M2seq_mod/example_data/input/` folder to a directory where you want to run the analysis.
+
+In the directory with the inputs run:
+
+```
+run_m2seq_pipeline.py -s P4P6noHP.fa -f RTB000_S1_L001_R1_001.fastq RTB000_S1_L001_R2_001.fastq
+```
+
+Folder `RTB000_S1` will be created and the output data will be generated in `RTB000_S1/3_M2seq/simple_files/`.
+
+Compare your results with files in `M2seq_mod/example_data/output/RTB000_S1/3_M2seq/simple_files`.
+
+
+
 
 ### Plot generation
 
