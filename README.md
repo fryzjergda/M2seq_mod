@@ -318,6 +318,9 @@ https://github.com/ribokit/RDATKit
 git clone git@github.com:ribokit/RDATKit.git
 ```
 
+or
+
+`git clone https://github.com/ribokit/RDATKit.git`
 
 Copy `path.py.example` into `rdatkit/path.py`. Edit `rdatkit/path.py` following the instructions in the file to point to local installations of `RNAstructure`, `ViennaRNA`, and `VARNA`.
 
@@ -377,6 +380,10 @@ RDATkit requires some MATLAB functions from HiTRACE (even though it is not menti
 Clone the program from the repo:
 
 `git clone git@github.com:ribokit/HiTRACE.git`
+
+or
+
+`git clone https://github.com/ribokit/HiTRACE.git`
 
 
 In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/HiTRACE/Scripts/`
