@@ -209,6 +209,11 @@ Install ViennaRNA via `apt install`:
 
 `sudo apt install viennarna`
 
+(if apt cannot find viennarna, this step might be required before:)
+
+`sudo add-apt-repository ppa:j-4-deactivatedaccount/vienna-rna`
+
+
 
 If that does not work then try the below method:
 
