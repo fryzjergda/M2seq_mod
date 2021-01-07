@@ -358,6 +358,14 @@ python setup.py install
 
 ## Requirements for MATLAB
 
+#### M2seq
+
+Clone the program from repo:
+
+`git clone https://github.com/ribokit/M2seq.git`
+
+In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/M2seq/matlab/`
+
 #### RDATKit
 
 In MATLAB, go to "Set Path". Then "Add with Subfolders" of the target path: `path/to/RDATKit/MATLAB/.`
