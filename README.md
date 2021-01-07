@@ -275,6 +275,9 @@ https://github.com/Weeks-UNC/ShapeMapper_v1.2
 ```
 git clone git@github.com:Weeks-UNC/ShapeMapper_v1.2.git
 
+or
+
+https://github.com/Weeks-UNC/ShapeMapper_v1.2.git
 ```
 
 Add the following to `~/.bashrc`:
